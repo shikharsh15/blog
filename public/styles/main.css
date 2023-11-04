@@ -1,0 +1,50 @@
+@keyframes moveBackgroundColor {
+    0% { background-color:#ef7e91 ; }
+    25% { background-color: #fca9b7; }
+    50% { background-color: #ffd1dc; }
+    75% { background-color: #fca9b7; }
+    100% { background-color: #ef7e91; }
+}
+
+body {
+        animation: moveBackgroundColor 5s linear infinite;
+        text-align: center;
+        font-size: 24px;
+        /* color: white; */
+    }
+h1{
+    color: blue;
+    font-size: 700px;
+}
+.carousel-item{
+    height: 450px;
+    width: 100%;
+}
+.custom-textarea::placeholder {
+    color: white;
+}
+.carImg{
+    height:410px ;
+    width: 700px;
+}
+.gradient-background {
+    background: linear-gradient(to bottom, #f7b7ff, #ffffff);
+    border-radius: 40px;
+    
+  }
+.div-gradient {
+    background: linear-gradient(to right, #ffffff, rgb(219, 219, 219),rgb(191, 123, 123),rgb(219, 219, 219),white);
+  }
+#lav{
+    border-radius: 140px;;
+    background: linear-gradient(to bottom, #ffffff, rgb(219, 219, 219),rgb(191, 123, 123),rgb(219, 219, 219),white);
+}
+.blBut{
+    color: #6D071A;
+}
+.lavend{
+    background: linear-gradient(to right, #ffffff, rgb(219, 219, 219),rgb(250, 183, 183),rgb(219, 219, 219),white,#ffffff, rgb(219, 219, 219),rgb(250, 183, 183),rgb(219, 219, 219),white);
+}
+.hid{
+    color:navy;
+}

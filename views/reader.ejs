@@ -1,0 +1,27 @@
+<%- include("./partials/header.ejs") %>
+<div class="container text-center">
+  <% for (var i = 0; i < blogs.length; i++) { %>
+      <div class="p-5 mb-4 rounded-3 div-gradient" style="position: relative;">
+          <div class="container-fluid py-0">
+              <% var time = new Date(blogs[i].time); %>
+              <% var formattedTime = time.toLocaleString('en-US', {
+                  month: 'short',
+                  day: '2-digit',
+                  year: 'numeric',
+                  hour: '2-digit',
+                  minute: '2-digit',
+                  second: '2-digit'
+              }); %>
+              <div style="position: absolute; top: 10px; left: 10px; color: rgb(0, 0, 0);">Added: <%= formattedTime %></div>
+              <h1 class="display-5 fw-bold mb-3" style="color: navy;"><%= blogs[i].title %></h1>
+              <p class="fs-5 text-center" style="color: #004500;"><%= blogs[i].blog %></p>
+              <p class="fs-6 text-end mb-3" style="color: rgb(0, 55, 0);">- <%= blogs[i].username %></p>
+              <a href="/read/<%= blogs[i].index %>">
+                  <button class="btn btn-danger pb-2" style="color: white;" type="button">Read Here</button>
+              </a>
+          </div>
+      </div>
+  <% } %>
+</div>
+
+<%- include("./partials/footer.ejs") %>

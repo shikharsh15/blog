@@ -1,0 +1,27 @@
+
+<%- include("./partials/header.ejs") %>    
+    <div class="container">
+      
+<div class="container my-5">
+  <div class="p-5 text-center rounded-5" id="lav">
+      <h1 class="text-body-emphasis mt-0 mb-5"><%= curr.title %></h1>
+      <div class="editable-content">
+        <p class="fs-5 text-center"><%= curr.blog%></p>
+      </div>
+
+      <div class="d-inline-flex gap-2 mb-3">
+        <a class="btn blBut btn-lg px-4 rounded-pill mt-5" href="/edit?index=<%= curr.index %>" style="background-color: #b62f11;; color: white;">
+          Edit
+        </a>
+        
+        <form action="/delete/<%= curr.index %>" method="POST">
+          <button class="btn blBut btn-lg px-4 rounded-pill mt-5" type="submit" style="background-color: #b62f11; color: white;">
+            Delete
+          </button>
+        </form>
+        
+        </form>
+      </div>
+  </div>
+</div>
+<%- include("./partials/footer.ejs") %>

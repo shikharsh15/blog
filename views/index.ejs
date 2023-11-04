@@ -1,0 +1,33 @@
+<%- include("./partials/header.ejs") %>
+<section id="logo">
+  <div class="px-4 py-2 my-3 text-center">
+  <img class="d-block mx-auto mb-4" src="./images/logo.png" alt="Logo" width="280" height="200">
+  <h1 class="display-5 fw-bold" style="color:rgb(28, 61, 7)" id="h1Logo">Woombat</h1>
+  <div class="col-lg-6 mx-auto">
+    <p class="lead mb-4 fs-4">
+      Hey there, Welcome to Woombat 🎉 We're all about cool stuff and great reads. From tech to travel, we've got your back. Sit back, relax, and let's dive into some fun and insightful content together!</p>
+  </div>
+</div></section>
+<section id="choices">
+    <div class="container my-0 gradient-background">
+  <div class="p-5 text-center rounded-3">
+    <h1 class="mb-2" style="color:rgb(63, 63, 63);">What would you like to do</h1>
+    <p class="col-lg-8 mx-auto fs-5 text-muted">
+      
+    </p>
+    <div class="d-inline-flex gap-2 my-3">
+      <a href="/write">
+      <button class="btn btn-warning btn-outline-dark btn-lg px-4 rounded-pill mx-3" type="button">
+        Write an article
+      </button>
+    </a>
+      <a href="/read">
+      <button class="btn btn-warning btn-outline-dark btn-lg px-4 rounded-pill mx-3" type="button">
+        Read an article
+      </button>
+    </a>
+    </div>
+  </div>
+</div>
+</section>
+<%- include("./partials/footer.ejs") %>

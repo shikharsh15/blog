@@ -1,0 +1,22 @@
+<%- include("./partials/header.ejs")%>
+<div class="row align-items-md-stretch col-12">
+    <div class="col-md-1"></div>
+    <div class="col-md-5">
+      <div class="h-100 p-5 text-bg-dark rounded-3 lavend">
+        <h2 class="text-center mb-5 hid">Blog</h2>
+        <p class="mt-2 fs-5" id="blogContent" style="color:rgb(6, 17, 1)"><%= blog.blog %></p>
+      </div>
+    </div>
+    <div class="col-md-5">
+        <div class="h-100 p-5 text-bg-dark rounded-3 lavend">
+          <h2 class="text-center mb-4 hid">Write new Blog text</h2>
+          <form action="/update-blog/<%= blog.index %>" method="POST"> <!-- Use a form with POST method -->
+            <textarea class="form-control custom-textarea text-center bg-dark text-light mt-4" id="blogTextarea" name="newBlogContent" placeholder="Enter text here" rows="8"></textarea>
+            <button class="btn btn-light text-body-emphasis mt-5 mb-0" type="submit">Submit</button>
+          </form>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+</div>
+
+<%- include("./partials/footer.ejs")%>
